@@ -8,6 +8,7 @@
 <% for entry in @entries %>
     <h2><%= link_to(entry.title, entry_path(entry)) %></h2>
         <p><%= entry.date %></p>
+        <p>Author: <%= entry.author %></p>
         <p><%= entry.contents %></p>
   <% end %>
 
